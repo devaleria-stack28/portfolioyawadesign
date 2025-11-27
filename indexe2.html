@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yawa Design - Portfolio</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Yawa Design</div>
+                <a href="index.html" class="nav-back">
+                    ← Retour
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Portfolio -->
+    <section class="new-arrivals">
+        <div class="container">
+            <h2 class="section-title">Catalogues</h2>
+            <p class="section-subtitle">Découvrez ici une sélection de mes réalisations, pensées avec créativité, passion et souci du détail. Chaque projet reflète mon univers, mon style et ma façon de donner vie aux idées. Bonne exploration.</p>
+            
+            <div class="products-grid">
+                <!-- Projet 1 -->
+                <div class="product-card" onclick="openLightbox(0)">
+                    <div class="product-image">
+                        <img src="logo/logo_Plan de travail 1 copie 10.jpg" alt="1 minute pour soutcher 2025">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-code">YAWAD2024</div>
+                    </div>
+                </div>
+                
+                <!-- Projet 2 -->
+                
+                
+          
+           
+               
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+            <div class="lightbox-nav">
+                <button class="lightbox-prev" onclick="changeImage(-1)">&#10094;</button>
+                <button class="lightbox-next" onclick="changeImage(1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>Copyright © 2025, Yawa Design</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>
