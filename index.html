@@ -5,167 +5,255 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Designer Graphique</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.cdnfonts.com/css/stretch-pro" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Yawa_Design_</a>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Accueil</a>
-                <a href="#projects" class="nav-link">Projets</a>
-                <a href="#about" class="nav-link">À Propos</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Section Hero -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Designer Graphic | UX/UI Designer | Développeuse Front-End </h1>
-            <p class="hero-subtitle">Je crée des identités visuelles mémorables et des expériences engageantes</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">Voir mes projets</a>
-                <a href="#contact" class="btn btn-secondary">Me contacter</a>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="#home">Magnim.valerie</a>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About Us</a></li>
+            <li><a href="#projects" class="nav-link">Portfolio</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Section Hero -->
+<section id="home" class="hero">
+    <div class="hero-noise"></div>
+
+    <div class="hero-inner">
+        <!-- Signature au dessus -->
+        <div class="hero-signature">Magnim Valérie</div>
+
+        <!-- Bloc typographique principal -->
+        <div class="hero-type-block">
+            <div class="hero-line line-1">
+                <span class="hero-big">PORTFOLIO</span>
             </div>
+            
+           
         </div>
-        <div class="scroll-indicator">
-            <span>Scroll</span>
-            <div class="arrow"></div>
+
+        <!-- Tags outils -->
+        <div class="hero-tags">
+            <span class="hero-tag">Photoshop</span>
+            <span class="hero-tag">Illustrator</span>
+            <span class="hero-tag">Figma</span>
+            <span class="hero-tag">Affinty</span>
         </div>
-    </section>
 
-    <!-- Section Projets -->
-   <div class="product-container">
+        <!-- Sous-titre -->
+        <p class="hero-subtitle">Designer Graphique & UX/UI</p>
 
-    <div class="product-card">
-        <img src="Evenementiel/Nuit d'Or & de Diamant 1.jpg" alt="EVENEMENTIEL">
-        <h3>EVENEMENTIEL</h3>
-        <span class="ref">YAWAD2024</span>
-        <a href="indexe3.html" class="btn">Voir Plus</a>
+        <!-- Boutons -->
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+            <a href="#contact" class="btn btn-secondary">Me contacter</a>
+        </div>
+
+        <div class="availability"><span class="dot"></span>Disponible pour des projets</div>
     </div>
 
-    <div class="product-card">
-        <img src="logo/ESPERENCE ET VIE.png" alt="Spot publicitaire">
-        <h3>LOGO</h3>
-        <span class="ref">YAWAD2024</span>
-        <a href="indexe2.html" class="btn">Voir Plus</a>
+    <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="arrow"></div>
     </div>
+</section>
 
-    <div class="product-card">
-        <img src="flyers/2.jpg" alt="Flyers">
-        <h3>FLYERS</h3>
-        <span class="ref">YAWAD2024</span>
-        <a href="indexe1.html" class="btn">Voir Plus</a>
-    </div>
+<!-- Section Projets -->
+<section id="projects" class="projects">
+    <div class="container">
+        <h2 class="section-title">Projets</h2>
+        <div class="project-filters" aria-label="Filtres projets">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="ux">UX/UI Design</button>
+            <button class="filter-btn" data-filter="gd">Graphic Design</button>
+        </div>
 
-</div>
-
-
-
-
-    <!-- Section À Propos -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="1.jpg" alt="Votre photo">
-                </div>
-                <div class="about-text">
-                    <h2 class="section-title">À Propos de Moi</h2>
-                    <p>
-                        Je suis graphiste et designer UX/UI, avec des compétences en développement web.
-Je transforme des idées en solutions esthétiques et fonctionnelles pour offrir des expériences modernes et intuitives.
-
-                    </p>
-                    <div class="skills">
-                        <div class="skill-category">
-                            <h4>Compétences</h4>
-                            <ul>
-                                <li>Branding & Identité visuelle</li>
-                                <li>UI/UX Design</li>
-                                <li>Direction artistique</li>
-                                <li>Édition & Typographie</li>
-                            </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Logiciels</h4>
-                            <ul>
-                                <li>Adobe Creative Suite</li>
-                                <li>Figma</li>
-                                <li>Corel Draw</li>
-                                <li>Canva</li>
-                            </ul>
-                        </div>
+        <div class="projects-grid">
+            <div class="section-label ux-label">UX/UI Design</div>
+            <div class="cards ux-section">
+                <div class="card product-card" data-cat="ux">
+                    <span class="card-badge badge-ux">UX/UI</span>
+                    <img src="Site_Afriqueen.png" alt="App Mobile">
+                    <h3>App Mobile</h3>
+                    <span class="ref">Case Study</span>
+                    <div class="card-tags">
+                        <span class="tag">Figma</span>
+                        <span class="tag">Prototype</span>
+                        <span class="tag">Wireframe</span>
                     </div>
-                    <a href="CV N'ZONOU M.VALERIE.pdf" class="btn btn-primary" download>Télécharger mon CV</a>
+                    <a href="https://www.figma.com/proto/KNkFB5kSwhOBDfm9Cwn4kr/Site_Afriqueen?node-id=1-4&p=f&t=mkwHteRJUSHJxhgC-0&scaling=scale-down&content-scaling=fixed&page-id=1%3A2" class="btn">Voir Plus</a>
+                </div>
+                <div class="card product-card" data-cat="ux">
+                    <span class="card-badge badge-ux">UX/UI</span>
+                    <img src="01_Home.jpg" alt="Dashboard">
+                    <h3>Dashboard</h3>
+                    <span class="ref">Design System</span>
+                    <div class="card-tags">
+                        <span class="tag">Figma</span>
+                        <span class="tag">Design System</span>
+                        <span class="tag">Research</span>
+                    </div>
+                    <a href="#" class="btn">Voir Plus</a>
+                </div>
+                <div class="card product-card" data-cat="ux">
+                    <span class="card-badge badge-ux">UX/UI</span>
+                    <img src="flyers/3.jpg" alt="E-commerce">
+                    <h3>E‑commerce</h3>
+                    <span class="ref">Prototype</span>
+                    <div class="card-tags">
+                        <span class="tag">Figma</span>
+                        <span class="tag">Prototype</span>
+                        <span class="tag">Case Study</span>
+                    </div>
+                    <a href="#" class="btn">Voir Plus</a>
+                </div>
+            </div>
+
+            <div class="section-label gd-label">Graphic Design</div>
+            <div class="cards gd-section">
+                <div class="card product-card" data-cat="gd">
+                    <span class="card-badge badge-gd">Graphique</span>
+                    <img src="Evenementiel/Nuit d'Or & de Diamant 1.jpg" alt="EVENEMENTIEL">
+                    <h3>Événementiel — Nuit d'Or</h3>
+                    <span class="ref">YAWAD2024</span>
+                    <div class="card-tags">
+                        <span class="tag">Affiche</span>
+                        <span class="tag">Événement</span>
+                    </div>
+                    <a href="indexe3.html" class="btn">Voir Plus</a>
+                </div>
+                <div class="card product-card" data-cat="gd">
+                    <span class="card-badge badge-gd">Graphique</span>
+                    <img src="logo/ESPERENCE ET VIE.png" alt="LOGO">
+                    <h3>Logo — Espérance</h3>
+                    <span class="ref">YAWAD2024</span>
+                    <div class="card-tags">
+                        <span class="tag">Logo</span>
+                        <span class="tag">Branding</span>
+                    </div>
+                    <a href="indexe2.html" class="btn">Voir Plus</a>
+                </div>
+                <div class="card product-card" data-cat="gd">
+                    <span class="card-badge badge-gd">Graphique</span>
+                    <img src="flyers/2.jpg" alt="Flyers">
+                    <h3>Flyers — Restaurant</h3>
+                    <span class="ref">YAWAD2024</span>
+                    <div class="card-tags">
+                        <span class="tag">Flyers</span>
+                        <span class="tag">Affiche</span>
+                    </div>
+                    <a href="indexe1.html" class="btn">Voir Plus</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Section Contact -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Travaillons ensemble</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Parlons de votre projet</h3>
-                    <p>Je suis toujours ouvert à discuter de nouvelles opportunités et collaborations créatives.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>yawadesign28@portfolio.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+228 99 87 88 26</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Lomé, Togo</span>
-                        </div>
+<!-- Section À Propos -->
+<section id="about" class="about">
+    <div class="about-hello-bg">Hello!</div>
+    <div class="about-inner">
+        <div class="about-left">
+            <h1 class="about-hello">Hello!</h1>
+            <h2 class="about-name">Je suis Magnim Valérie</h2>
+            <p class="about-role">Designer graphique & UX/UI à Lomé, Togo.</p>
+            <p class="about-bio">
+                Curieuse et passionnée, je m'intéresse à de nombreux domaines comme la photographie et les nouvelles technologies.<br>
+                Mais parmi toutes mes passions, le design est de loin celui qui me correspond le mieux : la créativité s'y mêle à l'empathie et à la logique.<br>
+                À travers ce portfolio, je souhaite aussi mettre en avant mon intérêt pour le branding, la direction artistique et la création visuelle au sens large.
+            </p>
+            <div class="about-skills-row">
+                <div class="about-skill-col">
+                    <h4>Compétences</h4>
+                    <ul>
+                        <li>Branding & Identité visuelle</li>
+                        <li>UI/UX Design</li>
+                        <li>Direction artistique</li>
+                        <li>Édition & Typographie</li>
+                    </ul>
+                </div>
+                <div class="about-skill-col">
+                    <h4>Logiciels</h4>
+                    <ul>
+                        <li>Adobe Creative Suite</li>
+                        <li>Figma</li>
+                        <li>Corel Draw</li>
+                        <li>Canva</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="CV N'ZONOU M.VALERIE.pdf" class="btn btn-primary" download>Télécharger mon CV</a>
+        </div>
+        <div class="about-right">
+            <img src="1.jpg" alt="Magnim Valérie">
+        </div>
+    </div>
+</section>
+
+<!-- Section Contact -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title">Travaillons ensemble</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Parlons de votre projet</h3>
+                <p>Je suis toujours ouvert à discuter de nouvelles opportunités et collaborations créatives.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>yawadesign28@portfolio.com</span>
                     </div>
-                    <div class="social-links">
-                        <a href="https://www.behance.net/valchou"><i class="fab fa-behance"></i></a>
-                        <a href="#"><i class="fab fa-dribbble"></i></a>
-                        <a href="https://www.linkedin.com/in/valerie-n-zonou-425495265/"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/yawa_design_/"><i class="fab fa-instagram"></i></a>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+228 99 87 88 26</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Lomé, Togo</span>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Votre nom" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Votre email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Votre message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
-                </form>
+                <div class="social-links">
+                    <a href="https://www.behance.net/valchou"><i class="fab fa-behance"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                    <a href="https://www.linkedin.com/in/valerie-n-zonou-425495265/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/yawa_design_/"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Votre email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Votre message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer le message</button>
+            </form>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 YawaDesign. Tous droits réservés.</p>
-        </div>
-    </footer>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 YawaDesign. Tous droits réservés.</p>
+    </div>
+</footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
