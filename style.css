@@ -176,6 +176,7 @@ body {
 .hero-type-block {
     display: flex;
     flex-direction: column;
+    align-items: center;
     line-height: 0.85;
     margin-bottom: 1.5rem;
 }
@@ -184,8 +185,8 @@ body {
     display: block;
 }
 
-/* Ligne 1 : PORT — légèrement à gauche */
-.line-1 { transform: translateX(-4%); }
+/* Ligne 1 : PORTFOLIO centré */
+.line-1 { transform: translateX(0); }
 /* Ligne 2 : FOLIO — légèrement à droite */
 .line-2 { transform: translateX(4%); }
 
