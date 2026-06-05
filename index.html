@@ -17,17 +17,23 @@
         <div class="nav-logo">
             <a href="#home">Magnim.valerie</a>
         </div>
-        <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-navigation">
             <i class="fas fa-bars"></i>
         </button>
-        <ul class="nav-menu">
-            <li><a href="#home" class="nav-link active">Home</a></li>
-            <li><a href="#projects" class="nav-link">Portfolio</a></li>
-            <li><a href="#about" class="nav-link">About Me</a></li>
-            <li><a href="#contact" class="nav-link">Contact Us</a></li>
-        </ul>
+        <div class="nav-panel" aria-hidden="true">
+            <button class="nav-close" aria-label="Fermer le menu">
+                <i class="fas fa-xmark"></i>
+            </button>
+            <ul id="main-navigation" class="nav-menu" role="menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#projects" class="nav-link">Portfolio</a></li>
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#contact" class="nav-link">Contact Us</a></li>
+            </ul>
+        </div>
     </div>
 </nav>
+<div class="nav-backdrop" aria-hidden="true"></div>
 
 <!-- Section Hero -->
 <section id="home" class="hero">
