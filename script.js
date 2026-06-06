@@ -192,7 +192,8 @@ if (contactForm) {
         const phone = contactForm.querySelector('input[type="tel"]').value.trim();
         const message = contactForm.querySelector('textarea').value.trim();
 
-        const whatsappUrl = 'https://wa.me/22899878826?text=Bonjour%20je%20souhaite%20avoir%20plus%20d%27informations';
+        const text = `Bonjour, je souhaite avoir plus d'informations.\n\nNom: ${name}\nEmail: ${email}\nTéléphone: ${phone}\nMessage: ${message}`;
+        const whatsappUrl = `https://wa.me/22899878826?text=${encodeURIComponent(text)}`;
 
         window.open(whatsappUrl, '_blank');
     });
