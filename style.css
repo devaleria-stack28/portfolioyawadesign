@@ -35,7 +35,7 @@ body {
     width: 100%;
     background: rgba(10,10,10,0.95);
     z-index: 1000;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1rem;
     display: flex;
     justify-content: center;
     border-bottom: 1px solid rgba(255,255,255,0.08);
@@ -93,27 +93,8 @@ body {
     background: transparent;
     border: none;
     color: #ffffff;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     cursor: pointer;
-}
-
-.nav-backdrop {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.25s ease;
-    z-index: 1040;
-}
-
-.nav-backdrop.open {
-    display: block;
-    opacity: 1;
-    pointer-events: auto;
 }
 
 .nav-link {
@@ -725,8 +706,8 @@ section { padding: 100px 0; }
         position: relative;
         justify-content: space-between;
         width: 100%;
-        max-width: 1200px;
-        padding: 0 10px;
+        max-width: 1250px;
+        padding: 10 20px;
     }
 
     .nav-toggle {
@@ -787,12 +768,33 @@ section { padding: 100px 0; }
         color: #ff4500;
     }
 
-    .nav-toggle {
+    /* .nav-toggle {
         z-index: 1115;
-    }
+        padding: 12px 30px;
+        border: none;
+        border-radius: 50px;
+        background: transparent;
+        color: #ffffff;
+        font-size: 0.88rem;
+        cursor: pointer;
+        outline: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    } */
 
     .nav-close {
         display: block;
+        padding: 12px 30px;
+        border: 1px solid rgba(255,255,255,0.2);
+        border-radius: 50px;
+        background: transparent;
+        color: #ffffff;
+        font-size: 0.88rem;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .hero {
